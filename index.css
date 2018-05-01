@@ -1,0 +1,197 @@
+body * {
+	box-sizing: border-box;
+	font-family: 'Creepster', cursive;
+	text-shadow: -2.5px 0 #efea8b, 0 2.5px #efea8b, 2.5px 0 #efea8b, 0 -2.5px #efea8b;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  background: url(https://newnoisemagazine.com/wp-content/uploads/2017/09/RickandMorty.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#container {
+	height: 100%;
+	display: none;
+}
+
+h1, h2 {
+	color: #07d1e0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 5em;
+	font-style: bold;
+}
+
+h2 {
+	font-size: 2em;
+	font-style: italic;
+}
+
+#start-page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+button {
+	display: block;
+	min-height: 80px;
+	min-width: 80px;
+	margin-bottom: 1.5em;
+	font-size: 2em;
+	border: none;
+	background-color: #efea8b;
+	color: black;
+	border-radius: 5px;
+	padding: .5em 1em;
+	width: 60%;
+	max-width: 200px;
+}
+
+button:hover {
+	background-color: #42f4c2;
+	cursor: pointer;
+}
+
+#question-page {
+	height: 100vh;
+	width: 100vw;
+	max-height: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 1.3em;
+	background-color: rgba(255, 255, 255, .4);
+}
+
+#question {
+	margin: 0 auto;
+	height: 100px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	padding: 0 10%;
+	border: none;
+}
+
+label {
+	margin-bottom: 1em;
+	font-size: 1.5em;
+	height: 100%;
+}
+
+.answer {
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+}
+
+#js-submit-button {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	font-size: 1.3em;
+}
+
+#status-bar {
+  width: 600px;
+  margin: 0 auto;
+}
+
+legend {
+  display: flex;
+  flex-direction: column;
+  color: #07d1e0;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+#question-count, #score-count {
+	display: inline-block;
+	font-size: 1.25em;
+}
+
+#score-count {
+	float: right;
+}
+
+.feedback-page {
+	display: flex;
+	flex-direction: column;
+
+}
+
+#js-next-button {
+	margin: 1em auto;
+}
+
+#js-restart-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 10em;
+}
+
+@media only screen and (min-width: 310px) {
+  #container {
+    display: block;
+  }
+  #narrow {
+    display: none;
+  }
+	#question-count, #score-count {
+		display: inline-block;
+		margin: 0 .6em .6em;
+	}
+  #status-bar{
+    width: 100vw;
+  }
+	#score-count {
+		float: right;
+	}	
+
+	h2 {
+	font-size: 2em;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+  #question{
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+	.feedback-page h2 {
+		width: 650px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+	#question{
+	  width: 1000px;
+	}
+}
